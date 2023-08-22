@@ -1,0 +1,198 @@
+ /* Color Scheme */
+:root {
+    --primary-color: #588157; /* Green */
+    --secondary-color: #3a5a40; /* Dark Green */
+    --background-color: #dad7cd; /* Light Gray */
+    --text-color: #344e41; /* Dark Gray */
+}
+
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #dad7cd;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .container {
+            width: 50%;
+            min-width: 400px;
+            color:#344e41;
+            margin: 30px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+        
+        .form-group {
+            padding-top:20px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        select, input, textarea {
+            width: 90%;
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #344e41;
+            border-radius: 5px;
+            color:#344e41;
+            outline: none;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        .form-submit{
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+
+        }
+        .error {
+            color: red;
+        }
+        
+        input[type=submit] {
+
+            background-color: #344e41;
+            color: white;
+            border: none;
+            max-width:30% ;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        label{
+            color: #344e41;
+        }
+        
+        fieldset{
+            border:none;
+        }
+      
+        .center-heading {
+            text-align: left;
+            max-height: 20px ;
+            color: white;
+        }
+        /* Navbar Styling */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+.navbar a, .navbar .inner-nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 0;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover, .navbar .inner-nav a:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* Inner Nav Styling */
+.navbar .inner-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    padding:4px;
+}
+
+
+h3{
+    color: #344e41;
+    text-align: center;
+    font-family: monospace;
+    font-size: 3em;
+}
+.input-box {
+    padding-top:5px ;
+    min-width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input-field {
+    width: 75vw;
+    padding: 8px;
+    border: 1px solid #55a8a3;
+    border-radius: 5px;
+}
+
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.job-post {
+    background-color: #f0f7f6;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    display: flex;
+    max-width: 800px;
+    width: 25%;
+}
+
+.a-button {
+    width: 100%;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #588157;
+    color: white;
+    transition: background-color 0.3s;
+
+}
+
+.a-button:hover {
+    background-color: #3a5a40;
+}
+
+.a_button {
+    
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3c7d7b; /* Light color for the button background */
+    color: white;
+    transition: background-color 0.3s;
+}
+h3{
+	color: #344e41;
+    text-align: center;
+    font-family: monospace;
+    font-size: 3em;
+}
+

@@ -1,0 +1,128 @@
+/* Color Scheme */
+:root {
+    --primary-color: #588157; /* Green */
+    --secondary-color: #3a5a40; /* Dark Green */
+    --background-color: #dad7cd; /* Light Gray */
+    --text-color: #344e41; /* Dark Gray */
+}
+
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Center Content Styling */
+.center-content {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: flex-start;
+    min-width: 100%;
+}
+
+.center-heading {
+    text-align: center;
+    max-height: 20px;
+    color: white;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+.navbar a, .navbar .inner-nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.navbar a:hover, .navbar .inner-nav a:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* Inner Nav Styling */
+.navbar .inner-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Input Box Styling */
+.input-box {
+    padding-top: 15px;
+    min-width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field {
+    width: 75%;
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Job List Styling */
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Job Post Styling */
+.job-post {
+    background-color: #f0f7f6;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    display: flex;
+    max-width: 800px;
+    width: 25%;
+}
+
+.a-button {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.a-button:hover {
+    background-color: var(--primary-color);
+}
+
+h3 {
+    color: var(--text-color);
+    text-align: center;
+    font-family: monospace;
+    font-size: 3em;
+}
+
+.form-submit{
+    width: 30%;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+
+        }
