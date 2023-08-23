@@ -3,7 +3,21 @@
 It's a PHP-MySql Job Portal project where recruiter can post job and seeker can apply for job role based on requirements. It can seperate login/Registratriation page for seeker and recruiter.
 ## Glimpse
 <img src="images/history.png">
+<img src="images/login1.png">
+<img src="images/home.png">
+<img src="images/apply.png">
+<img src="images/register.png">
+<img src="images/register2.png">
+<img src="images/contact.png">
+<img src="images/src1.png">
+<img src="images/history1.png">
+<img src="images/hstry.png">
 
+## Tools Used
+    HTML
+    CSS
+    PHP
+    MySQL
 ## Database
 
 ``` 
