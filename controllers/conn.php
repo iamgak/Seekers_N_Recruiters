@@ -15,6 +15,7 @@ $db = new mysqli($host, $username, $password,$db_name);
 $db->query("CREATE DATABASE IF NOT EXISTS ".$db_name);
 
 $db->query("CREATE TABLE IF NOT EXISTS seeker (
+    id int(20) PRIMARY KEY AUTO_INCREMENT,
     name varchar(50) not null,
     email varchar(50) PRIMARY KEY not null,
     phone bigint(40) not null,

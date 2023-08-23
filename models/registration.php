@@ -5,10 +5,10 @@ class Register{
 	public function __construct($db){
 		$this->db=$db;
 	}
-	public function seeker($register){
+	public function seeker($register,$who){
 
 			try {
-    $result = $this->db->query("INSERT INTO seeker (name, email, phone, college, course, experience, industry, about, passw) VALUES ('$register[name]', '$register[email]', '$register[phone]', '$register[college]', '$register[course]', '$register[experience]', '$register[industry]', '$register[about]', '$register[passw]')");
+    $result = $this->db->query("INSERT INTO $who (name, email, phone, college, course, experience, industry, about, passw) VALUES ('$register[name]', '$register[email]', '$register[phone]', '$register[college]', '$register[course]', '$register[experience]', '$register[industry]', '$register[about]', '$register[passw]')");
 
     if ($result) {
         return True;
