@@ -15,7 +15,7 @@ $db = new mysqli($host, $username, $password,$db_name);
 $db->query("CREATE DATABASE IF NOT EXISTS ".$db_name);
 
 $db->query("CREATE TABLE IF NOT EXISTS seeker (
-    id int(20) PRIMARY KEY AUTO_INCREMENT,
+    id int(20) not null AUTO_INCREMENT primary key,
     name varchar(50) not null,
     email varchar(50) PRIMARY KEY not null,
     phone bigint(40) not null,
@@ -60,9 +60,8 @@ $db->query("
     date_time timestamp default current_timestamp )
     ");
 $db->query("CREATE table if not exists message (
-        
+        id varchar(10) not null,
         email varchar(50) primary key,
-      
         subject varchar(30),
         message TEXT,
         submission_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

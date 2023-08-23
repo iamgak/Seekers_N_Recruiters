@@ -63,7 +63,7 @@ body {
 
 /* Input Box Styling */
 .input-box {
-    padding-top: 15px;
+    padding-top: 5px;
     min-width: 90vw;
     display: flex;
     justify-content: center;
@@ -71,7 +71,7 @@ body {
 }
 
 .input-field {
-    width: 75%;
+    width: 75vw;
     padding: 8px;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
@@ -83,7 +83,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 15px;
-    width: 100%;
+    
 }
 
 /* Job Post Styling */
@@ -100,6 +100,7 @@ body {
 }
 
 .a-button {
+    width: 100%;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
@@ -118,11 +119,3 @@ h3 {
     font-family: monospace;
     font-size: 3em;
 }
-
-.form-submit{
-    width: 30%;
-            display: flex;
-            justify-content: center;
-            padding-top: 10px;
-
-        }

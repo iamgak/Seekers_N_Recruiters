@@ -1,24 +1,28 @@
-body {
+
+        h1{
+            text-align: center;
+            font-family: monospace ;
+        }
+        body {
             font-family: Arial, sans-serif;
             background-color: #dad7cd;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            height: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
         }
         
         .container {
-            width: 50%;
-            min-width: 400px;
+            width: 400px;
             color:#344e41;
             margin: 30px;
             padding: 30px;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            height: 100%;
         }
         
         .form-group {
@@ -34,7 +38,7 @@ body {
         }
         
         select, input, textarea {
-            width: 90%;
+            width: 350px;
             margin: 5px;
             padding: 10px;
             border: 1px solid #344e41;
@@ -43,11 +47,15 @@ body {
             outline: none;
             font-weight: bold;
             background-color: white;
+            font-size: 1.5rem;
         }
         
         .form-submit{
             display: flex;
+            width:;
+            flex-direction: row;
             justify-content: center;
+            justify-items: center;
             padding-top: 10px;
 
         }
@@ -60,10 +68,10 @@ body {
             background-color: #344e41;
             color: white;
             border: none;
-            max-width:30% ;
+            max-width:100% ;
             font-weight: bold;
             border-radius: 5px;
-            padding: 10px 20px;
+            padding: 15px 15px;
             cursor: pointer;
         }
         label{
@@ -73,69 +81,44 @@ body {
         fieldset{
             border:none;
         }
-        .main-container{
-            width:100%;
-            display: flex;
-            height: 100%;
-            justify-content: center;
-            justify-items: center;
-        }
-        .slogan{
-            font-size: 2em;
-            height: 100vh;
-            width:30%;
-            display: flex;
+        
 
-            flex-direction: column;
-            justify-content: flex-start;
-            justify-items: flex-start;
-            
-            font-family: cursive;
-            color:#344e41;
-           
-        }
+/* Center Content Styling */
 
-
-
-.navbar {
-
-    min-width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px;
-    background-color: #79155B;
-    
-
-}
-.navbar a, a[href="../Home.php"]{
-
-    text-decoration: none;
-   
-    color: white;
-    display: block;
-    margin:0;
-    padding:5px;
-    padding-right: 30%;
-    font-weight: bold;
-
-}
-
-
-.navbar .center-heading {
+.center-heading {
     text-align: center;
-    max-height: 30px ;
+    max-height: 30px;
+    font-size: 1.7rem;
     color: white;
-    flex-wrap: wrap;
-    flex:3;
 }
-.navbar .inner-nav{
-    align-self: end;
+
+/* Navbar Styling */
+.navbar {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
-    justify-items: center;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar a, .navbar .inner-nav a {
+    text-decoration: none;
+    color: #344e41;
+    display: block;
+    margin: 7px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.navbar a:hover, .navbar .inner-nav a:hover {
+    text-decoration: underline;
+    
+}
+
+/* Inner Nav Styling */
+.navbar .inner-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
 }
